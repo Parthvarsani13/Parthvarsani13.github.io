@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parth Varsani | Embedded Firmware Engineer</title>
+<meta name="description" content="Embedded firmware engineer specializing in Wi-Fi driver development, embedded Linux, and bare-metal firmware for ARM-based SoCs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">embedded systems / wi-fi drivers / bare-metal firmware</p>
+    <h1 class="name">Parth Varsani</h1>
+    <p class="tagline">Embedded Firmware Engineer with 2.5+ years building firmware and Linux drivers for ARM-based SoCs &mdash; from bare-metal bring-up to Wi-Fi driver internals.</p>
+
+    <div class="hero-meta">
+      <span>Boulder, CO &rarr; Bay Area, CA</span>
+      <span class="dot">&middot;</span>
+      <span>M.S. ECE, CU Boulder &apos;26</span>
+      <span class="dot">&middot;</span>
+      <span>parthvarsani45@gmail.com</span>
+    </div>
+
+    <div class="hero-links">
+      <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <a class="btn" href="https://github.com/Parthvarsani13" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/parthvarsani" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="mailto:parthvarsani45@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <section id="projects">
+    <div class="section-head">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-note">measured, not just built</p>
+    </div>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-top">
+          <h3>Real-time pan-tilt vision tracking</h3>
+          <a class="card-link" href="https://github.com/Parthvarsani13/spring_26_rtes" target="_blank" rel="noopener">repo &rarr;</a>
+        </div>
+        <p class="card-period">Raspberry Pi 4B &middot; Apr&ndash;May 2026</p>
+        <p class="desc">Four POSIX SCHED_FIFO pthreads (V4L2 capture, HSV segmentation, PID servo control at 30&nbsp;Hz, 1&nbsp;Hz health monitor) drive a dual-axis servo platform to track a moving target with HSV color segmentation and closed-loop PID.</p>
+        <div class="tags">
+          <span class="tag">RTOS</span>
+          <span class="tag">POSIX threads</span>
+          <span class="tag">V4L2</span>
+          <span class="tag">PID control</span>
+        </div>
+        <div class="signal-readout">U = 0.19, well under RM bound of 0.757 &middot; zero deadline misses</div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <h3>CAN-based proximity alert system</h3>
+          <a class="card-link" href="https://github.com/Parthvarsani13/spring_25_aesd" target="_blank" rel="noopener">repo &rarr;</a>
+        </div>
+        <p class="card-period">Raspberry Pi 4B &middot; Apr&ndash;May 2025</p>
+        <p class="desc">Character-device I2C driver for the APDS9960 proximity sensor exposing sampled data via FIFO IPC, plus a Yocto meta-layer integrating an MCP2515 CAN overlay and systemd services for reproducible multi-node deployment over SocketCAN.</p>
+        <div class="tags">
+          <span class="tag">I2C driver</span>
+          <span class="tag">SocketCAN</span>
+          <span class="tag">Yocto</span>
+          <span class="tag">embedded Linux</span>
+        </div>
+        <div class="signal-readout">two-node distributed app, fault-resistant LED response</div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <h3>BLE-based reverse parking assist</h3>
+          <a class="card-link" href="https://github.com/Parthvarsani13/spring_25_iot_emb_fw" target="_blank" rel="noopener">repo &rarr;</a>
+        </div>
+        <p class="card-period">EFR32 Blue Gecko &middot; Apr&ndash;May 2025</p>
+        <p class="desc">Low-power sensing system with interrupt-driven firmware coordinating ultrasonic and ambient-light sensors via GPIO and I2C, using BLE GATT alerts and sleep-mode power management tuned for real-time responsiveness.</p>
+        <div class="tags">
+          <span class="tag">BLE GATT</span>
+          <span class="tag">bare-metal</span>
+          <span class="tag">low-power</span>
+          <span class="tag">interrupt-driven</span>
+        </div>
+        <div class="signal-readout">3.6 mA server / 250 &mu;A client measured current draw</div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <h3>Smart sensor monitoring</h3>
+          <a class="card-link" href="https://github.com/Parthvarsani13/fall_24_pes" target="_blank" rel="noopener">repo &rarr;</a>
+        </div>
+        <p class="card-period">STM32F411 &middot; Fall 2024</p>
+        <p class="desc">Bare-metal firmware using memory-mapped I/O to interface IR and temperature sensors via bit-banged I2C and ADC, with NVIC- and DMA-driven interrupt acquisition feeding real-time updates to an OLED display.</p>
+        <div class="tags">
+          <span class="tag">memory-mapped I/O</span>
+          <span class="tag">DMA</span>
+          <span class="tag">NVIC</span>
+          <span class="tag">Cortex-M4</span>
+        </div>
+        <div class="signal-readout">sub-1% CPU utilization during continuous monitoring</div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <h3>8051 development board &amp; drivers</h3>
+          <a class="card-link" href="https://github.com/Parthvarsani13/fall_24_esd" target="_blank" rel="noopener">repo &rarr;</a>
+        </div>
+        <p class="card-period">AT89C51RC2 &middot; Fall 2024</p>
+        <p class="desc">Custom hardware platform built from first principles &mdash; clocking, reset sequencing, memory decoding, and peripheral address mapping &mdash; with hand-written assembly and C drivers for UART, I2C EEPROM, SPI, ADC, and LCD over memory-mapped I/O.</p>
+        <div class="tags">
+          <span class="tag">8051 assembly</span>
+          <span class="tag">bring-up</span>
+          <span class="tag">UART/SPI/I2C</span>
+          <span class="tag">logic analyzer</span>
+        </div>
+        <div class="signal-readout">verified bus timing &amp; ACK/NACK behavior at the signal level</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head">
+      <h2 class="section-title">Experience</h2>
+    </div>
+
+    <div class="exp-item">
+      <p class="exp-period">May 2025 &ndash; Aug 2025</p>
+      <div>
+        <h3 class="exp-role">Wi-Fi Intern</h3>
+        <p class="exp-org">CableLabs Inc. &middot; Louisville, CO</p>
+        <ul>
+          <li>Tuned EDCA (AIFSN, CWmin/CWmax, TXOP) parameters in the mwifiex driver stack to optimize MAC-layer contention behavior for voice/video ACs, reducing inter-transmission time by 35% across multi-station 802.11ac testbeds.</li>
+          <li>Built a Python PCAP analysis pipeline parsing radiotap and 802.11 MAC headers to extract per-AC ITT, TXOP duration, and retry distributions &mdash; replacing manual Wireshark inspection with closed-loop parameter tuning.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <p class="exp-period">Jan 2022 &ndash; Jul 2024</p>
+      <div>
+        <h3 class="exp-role">Associate Firmware Engineer</h3>
+        <p class="exp-org">Volansys &mdash; An ACL Digital Company &middot; Ahmedabad, India</p>
+        <ul>
+          <li>Root-caused and fixed an endianness bug in the custom mwifiex driver channel-scan path on NXP i.MX&nbsp;8MQ (SD8987), tracing corrupted channel descriptors through cfg80211 scan results with GDB and kernel ftrace, patched with <code>le16_to_cpu</code> macros.</li>
+          <li>Debugged Wi-Fi connectivity, roaming, and throughput regressions on SD8997 across driver/firmware boundaries, isolating issues to mac80211, vendor driver, or firmware layers through log correlation and PCAP analysis.</li>
+          <li>Automated Wi-Fi firmware validation via an <code>/etc/init.d</code> startup daemon executing scripted connect/disconnect cycles across varied security and channel parameters, speeding up bring-up testing.</li>
+          <li>Customized Yocto-based Linux BSPs for NXP i.MX platforms, trimming kernel configuration and optimizing U-Boot fast-boot paths to cut system startup time by 6.5 seconds.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-head">
+      <h2 class="section-title">Technical skills</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Programming &amp; OS</h4>
+        <div class="skill-pills">
+          <span class="pill">C</span>
+          <span class="pill">ARM Assembly</span>
+          <span class="pill">GNU Make</span>
+          <span class="pill">Shell scripting</span>
+          <span class="pill">FreeRTOS</span>
+          <span class="pill">Embedded Linux</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Communication protocols</h4>
+        <div class="skill-pills">
+          <span class="pill">Wi-Fi 802.11n/ac/ax</span>
+          <span class="pill">CAN</span>
+          <span class="pill">I2C</span>
+          <span class="pill">SPI</span>
+          <span class="pill">UART</span>
+          <span class="pill">BLE</span>
+          <span class="pill">RS232</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Hardware</h4>
+        <div class="skill-pills">
+          <span class="pill">NXP i.MX (Cortex-A53)</span>
+          <span class="pill">STM32F4</span>
+          <span class="pill">EFR32 Blue Gecko</span>
+          <span class="pill">nRF52840</span>
+          <span class="pill">AT89C51</span>
+          <span class="pill">Raspberry Pi 4B</span>
+          <span class="pill">SD8987 / SD8997</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Tools &amp; debugging</h4>
+        <div class="skill-pills">
+          <span class="pill">GDB / kGDB</span>
+          <span class="pill">Wireshark</span>
+          <span class="pill">Trace32</span>
+          <span class="pill">QEMU</span>
+          <span class="pill">Yocto / Buildroot</span>
+          <span class="pill">LANforge</span>
+          <span class="pill">Logic analyzer</span>
+          <span class="pill">Oscilloscope</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-head">
+      <h2 class="section-title">Education</h2>
+    </div>
+
+    <div class="edu-item">
+      <div>
+        <h4>University of Colorado Boulder</h4>
+        <p>M.S. Electrical &amp; Computer Engineering (Embedded Systems) &middot; GPA 3.5/4.0</p>
+      </div>
+      <p class="edu-period">Aug 2024 &ndash; May 2026</p>
+    </div>
+
+    <div class="edu-item">
+      <div>
+        <h4>BVM Engineering College, India</h4>
+        <p>B.Tech. Electronics Engineering &middot; CGPA 7.3/10.0</p>
+      </div>
+      <p class="edu-period">Jul 2018 &ndash; Jun 2022</p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="mono">designed &amp; built by Parth Varsani</p>
+    <div class="hero-links">
+      <a class="btn" href="https://github.com/Parthvarsani13" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/parthvarsani" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="mailto:parthvarsani45@gmail.com">Email</a>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
