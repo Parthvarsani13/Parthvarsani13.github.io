@@ -493,6 +493,32 @@ h1.name {
   margin-top: 2px;
 }
 
+/* ---------- stats ---------- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.stats-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.stats-card img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
 /* ---------- footer ---------- */
 footer {
   padding: 40px 0 72px;
@@ -518,6 +544,7 @@ footer .btn { padding: 8px 14px; font-size: 13px; }
   .bento { grid-template-columns: 1fr; }
   .project-grid { grid-template-columns: 1fr; }
   .exp-item { grid-template-columns: 1fr; gap: 6px; }
+  .stats-grid { grid-template-columns: 1fr; }
   .section-head { flex-direction: column; align-items: flex-start; gap: 4px; }
 }
 
