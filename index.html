@@ -7,7 +7,8 @@
 <meta name="description" content="Embedded firmware engineer specializing in Wi-Fi driver development, embedded Linux, and bare-metal firmware for ARM-based SoCs.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,10 +27,10 @@
     </div>
 
     <div class="hero-links">
-      <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-      <a class="btn" href="mailto:parthvarsani45@gmail.com">Email</a>
-      <a class="btn" href="https://github.com/Parthvarsani13" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://linkedin.com/in/parthvarsani" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener"><i class="ti ti-download" aria-hidden="true"></i>Resume</a>
+      <a class="btn" href="mailto:parthvarsani45@gmail.com"><i class="ti ti-mail" aria-hidden="true"></i>Email</a>
+      <a class="btn" href="https://github.com/Parthvarsani13" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i>GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/parthvarsani" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>LinkedIn</a>
     </div>
   </header>
 
@@ -139,7 +140,7 @@
 
     <div class="proj-card">
       <div class="proj-top">
-        <h3 class="display">Real-time pan-tilt vision tracking</h3>
+        <h3 class="display"><i class="ti ti-cpu proj-icon" aria-hidden="true"></i>Real-time pan-tilt vision tracking</h3>
         <a class="proj-link" href="https://github.com/Parthvarsani13/spring_26_rtes" target="_blank" rel="noopener">repo &rarr;</a>
       </div>
       <p class="proj-period">Raspberry Pi 4B &middot; Apr&ndash;May 2026</p>
@@ -155,7 +156,7 @@
 
     <div class="proj-card">
       <div class="proj-top">
-        <h3 class="display">CAN-based proximity alert system</h3>
+        <h3 class="display"><i class="ti ti-route proj-icon" aria-hidden="true"></i>CAN-based proximity alert system</h3>
         <a class="proj-link" href="https://github.com/Parthvarsani13/spring_25_aesd" target="_blank" rel="noopener">repo &rarr;</a>
       </div>
       <p class="proj-period">Raspberry Pi 4B &middot; Apr&ndash;May 2025</p>
@@ -171,7 +172,7 @@
 
     <div class="proj-card">
       <div class="proj-top">
-        <h3 class="display">BLE-based reverse parking assist</h3>
+        <h3 class="display"><i class="ti ti-bluetooth proj-icon" aria-hidden="true"></i>BLE-based reverse parking assist</h3>
         <a class="proj-link" href="https://github.com/Parthvarsani13/spring_25_iot_emb_fw" target="_blank" rel="noopener">repo &rarr;</a>
       </div>
       <p class="proj-period">EFR32 Blue Gecko &middot; Apr&ndash;May 2025</p>
@@ -187,7 +188,7 @@
 
     <div class="proj-card">
       <div class="proj-top">
-        <h3 class="display">Smart sensor monitoring</h3>
+        <h3 class="display"><i class="ti ti-thermometer proj-icon" aria-hidden="true"></i>Smart sensor monitoring</h3>
         <a class="proj-link" href="https://github.com/Parthvarsani13/fall_24_pes" target="_blank" rel="noopener">repo &rarr;</a>
       </div>
       <p class="proj-period">STM32F411 &middot; Fall 2024</p>
@@ -203,7 +204,7 @@
 
     <div class="proj-card">
       <div class="proj-top">
-        <h3 class="display">8051 development board &amp; drivers</h3>
+        <h3 class="display"><i class="ti ti-circuit-resistor proj-icon" aria-hidden="true"></i>8051 development board &amp; drivers</h3>
         <a class="proj-link" href="https://github.com/Parthvarsani13/fall_24_esd" target="_blank" rel="noopener">repo &rarr;</a>
       </div>
       <p class="proj-period">AT89C51RC2 &middot; Fall 2024</p>
@@ -249,6 +250,25 @@
   </div>
 
   <div class="section-head">
+    <h2 class="display">Research</h2>
+  </div>
+
+  <div class="card research-card" style="margin-bottom: 16px;">
+    <div class="proj-top" style="margin-bottom: 10px;">
+      <h3 class="display"><i class="ti ti-flask proj-icon" aria-hidden="true"></i>Containerized autograding infrastructure for embedded systems coursework</h3>
+      <span class="proj-link" style="cursor: default;">ongoing</span>
+    </div>
+    <p class="proj-period">University of Colorado Boulder, ECEE &middot; with Prof. Eric Keller</p>
+    <p class="desc">Building containerized autograding infrastructure for ECEN 5813 (Embedded Software Methods), using Renode for hardware emulation and Robot Framework for test orchestration &mdash; enabling reproducible, hardware-free grading of embedded coursework at scale.</p>
+    <div class="proj-tags">
+      <span class="proj-tag">Renode</span>
+      <span class="proj-tag">Robot Framework</span>
+      <span class="proj-tag">containerization</span>
+      <span class="proj-tag">CI/CD for coursework</span>
+    </div>
+  </div>
+
+  <div class="section-head">
     <h2 class="display">Now building</h2>
     <p class="section-note"><a href="https://github.com/Parthvarsani13?tab=repositories" target="_blank" rel="noopener">all repos &rarr;</a></p>
   </div>
@@ -264,9 +284,9 @@
   <footer>
     <p class="mono">designed &amp; built by Parth Varsani</p>
     <div class="hero-links">
-      <a class="btn" href="https://github.com/Parthvarsani13" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://linkedin.com/in/parthvarsani" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="mailto:parthvarsani45@gmail.com">Email</a>
+      <a class="btn" href="https://github.com/Parthvarsani13" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i>GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/parthvarsani" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>LinkedIn</a>
+      <a class="btn" href="mailto:parthvarsani45@gmail.com"><i class="ti ti-mail" aria-hidden="true"></i>Email</a>
     </div>
   </footer>
 
