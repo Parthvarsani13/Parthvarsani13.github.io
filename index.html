@@ -1,292 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Parth Varsani — Embedded Firmware Engineer</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parth Varsani | Embedded Firmware Engineer</title>
+<meta name="description" content="Embedded firmware engineer specializing in Wi-Fi driver development, embedded Linux, and bare-metal firmware for ARM-based SoCs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="nav">
-    <span class="nav-logo">PV</span>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+<nav class="signal-nav">
+  <div class="wrap nav-inner">
+    <span class="nav-name mono">parth_varsani</span>
+    <div class="signal-bars" id="signalBars" aria-label="scroll signal strength">
+      <span class="bar b1"></span>
+      <span class="bar b2"></span>
+      <span class="bar b3"></span>
+      <span class="bar b4"></span>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero" id="about">
-    <div class="hero-inner">
-      <div class="hero-tag">Embedded Firmware Engineer</div>
-      <h1 class="hero-name">Parth Varsani</h1>
-      <p class="hero-sub">
-        Wi-Fi driver stack · Linux kernel · Bare-metal embedded · IVI systems<br/>
-        M.S. ECE — Embedded Systems · CU Boulder '26
-      </p>
-      <div class="hero-links">
-        <a href="https://github.com/Parthvarsani13" target="_blank" class="btn btn-ghost">
-          <i class="ti ti-brand-github"></i> GitHub
-        </a>
-        <a href="https://linkedin.com/in/parthvarsani" target="_blank" class="btn btn-ghost">
-          <i class="ti ti-brand-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://www.youtube.com/@ParthVarsani" target="_blank" class="btn btn-ghost">
-          <i class="ti ti-brand-youtube"></i> YouTube
-        </a>
-        <a href="mailto:parthvarsani45@gmail.com" class="btn btn-ghost">
-          <i class="ti ti-mail"></i> Email
-        </a>
-        <a href="assets/resume.pdf" target="_blank" class="btn btn-primary">
-          <i class="ti ti-file-cv"></i> Resume
-        </a>
-      </div>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="ripple-bg" aria-hidden="true">
+      <svg viewBox="0 0 600 300" preserveAspectRatio="none">
+        <circle class="ripple r1" cx="520" cy="60" r="20"></circle>
+        <circle class="ripple r2" cx="520" cy="60" r="20"></circle>
+        <circle class="ripple r3" cx="520" cy="60" r="20"></circle>
+      </svg>
+    </div>
+    <p class="role-tag">Embedded Firmware Engineer</p>
+    <h1 class="name display">Parth Varsani</h1>
+    <p class="tagline">Embedded software and firmware engineer focused on Wi-Fi driver internals, real-time systems, and board-level bring-up across Linux and bare-metal targets.</p>
+
+    <div class="hero-meta">
+      <span>Boulder, CO &rarr; Bay Area, CA</span>
+      <span class="dot">&middot;</span>
+      <span>M.S. ECE, CU Boulder &apos;26</span>
     </div>
 
-    <!-- Stats strip -->
-    <div class="stats-strip">
-      <div class="stat-item">
-        <span class="stat-val">35%</span>
-        <span class="stat-label">Wi-Fi p95 ITT reduction</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-val">6.5s</span>
-        <span class="stat-label">Boot time cut</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-val">2.5 yr</span>
-        <span class="stat-label">Industry experience</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-val">0</span>
-        <span class="stat-label">Deadlines missed</span>
-      </div>
+    <div class="hero-links">
+      <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener"><i class="ti ti-download" aria-hidden="true"></i>Resume</a>
+      <a class="btn" href="mailto:parthvarsani45@gmail.com"><i class="ti ti-mail" aria-hidden="true"></i>Email</a>
+      <a class="btn" href="https://github.com/Parthvarsani13" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i>GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/parthvarsani" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>LinkedIn</a>
     </div>
-  </section>
+  </header>
 
-  <!-- ABOUT -->
-  <section class="section" id="about-text">
-    <div class="section-label">// about</div>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>
-          I started in embedded firmware tracing a <code>mwifiex</code> endianness bug on an NXP i.MX platform at Volansys — six hours of kernel log analysis, one <code>le16_to_cpu()</code> call, production-ready on the first re-flash. That moment convinced me the firmware–hardware interface is where the most interesting problems live.
-        </p>
-        <p>
-          At CableLabs I moved up the stack: profiling 802.11ac/ax EDCA parameters with a Python PCAP pipeline, cutting p95 inter-transmission time by 35% without touching the driver. Now I'm working on IVI infrastructure and Wi-Fi bring-up at Ford Greenfield Labs while building containerized autograding tools for embedded systems education at CU Boulder.
-        </p>
-      </div>
-      <div class="focus-card">
-        <div class="focus-title">Engineering Focus</div>
-        <ul class="focus-list">
-          <li><i class="ti ti-cpu"></i> Linux Wi-Fi driver stack (nl80211 / mac80211 / mwifiex)</li>
-          <li><i class="ti ti-terminal-2"></i> Bare-metal STM32 / NXP i.MX bring-up</li>
-          <li><i class="ti ti-circuit-board"></i> U-Boot · Device Tree · Yocto BSP</li>
-          <li><i class="ti ti-wave-square"></i> 802.11 MAC/PHY · EDCA · Rate control</li>
-          <li><i class="ti ti-box"></i> Docker · Renode · Robot Framework</li>
-        </ul>
-      </div>
+  <div class="stats-row">
+    <div class="stat">
+      <p class="stat-num">2.5<span class="unit">yrs</span></p>
+      <p class="stat-label">firmware &amp; driver experience</p>
     </div>
-  </section>
+    <div class="stat">
+      <p class="stat-num">35<span class="unit">%</span></p>
+      <p class="stat-label">ITT reduction via EDCA tuning</p>
+    </div>
+    <div class="stat">
+      <p class="stat-num">6.5<span class="unit">s</span></p>
+      <p class="stat-label">boot time cut via BSP/U-Boot work</p>
+    </div>
+    <div class="stat">
+      <p class="stat-num">0<span class="unit">misses</span></p>
+      <p class="stat-label">deadline misses, RTES pan-tilt system</p>
+    </div>
+  </div>
 
-  <!-- EXPERIENCE -->
-  <section class="section" id="experience">
-    <div class="section-label">// experience</div>
-    <div class="timeline">
+  <div class="about-block">
+    <p class="card-label">About</p>
+    <p class="about-text">I got into embedded systems the way most firmware engineers do &mdash; by getting my hands on real hardware and refusing to let it stay broken. At Volansys, fixing an endianness bug buried in a Wi-Fi driver's channel-scan path meant tracing corrupted descriptors through the kernel with GDB and ftrace until the root cause gave way to a two-line fix. That experience &mdash; sitting at the boundary between silicon, firmware, and the Linux kernel &mdash; is what pulled me toward Wi-Fi driver work specifically, and it's the thread that runs through everything on this page: bring-up, debugging, and the discipline of proving a system behaves the way you claim it does.</p>
+  </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <span class="tl-role">IVI Infrastructure Engineer (Contractor)</span>
-            <span class="tl-date">Jun 2026 – Present</span>
-          </div>
-          <span class="tl-company">Ford Greenfield Labs · Palo Alto, CA</span>
-          <p class="tl-desc">Board bring-up and Wi-Fi embedded software on the IVI Infrastructure team. Android HAL, kernel drivers, log analysis on Linux-based automotive infotainment platforms.</p>
-          <div class="tl-tags">
-            <span>Embedded Linux</span><span>Android HAL</span><span>Wi-Fi</span><span>Board Bring-up</span>
-          </div>
+  <div class="bento">
+
+    <div class="card expand-card" id="focus-card" onclick="toggleCard('focus-card')">
+      <div class="expand-head">
+        <div>
+          <p class="card-label">Engineering focus</p>
+          <h2>Where I spend my time</h2>
+          <p class="sub">Wi-Fi drivers, real-time systems, board bring-up.</p>
+        </div>
+        <div class="expand-chevron"><i class="ti ti-chevron-down" aria-hidden="true">&darr;</i></div>
+      </div>
+      <div class="expand-body">
+        <div class="expand-body-inner focus-list">
+          <div class="focus-row"><span class="k">Wi-Fi drivers</span><span class="v">mwifiex, mac80211/cfg80211/nl80211, EDCA tuning, channel-scan internals</span></div>
+          <div class="focus-row"><span class="k">Embedded Linux</span><span class="v">Yocto BSPs, U-Boot, kernel trimming, char device drivers</span></div>
+          <div class="focus-row"><span class="k">Real-time systems</span><span class="v">POSIX SCHED_FIFO, rate-monotonic scheduling, deadline analysis</span></div>
+          <div class="focus-row"><span class="k">Bring-up</span><span class="v">bare-metal C, memory-mapped I/O, DMA, interrupt-driven peripherals</span></div>
+          <div class="focus-row"><span class="k">Protocols</span><span class="v">802.11n/ac/ax, CAN, I2C, SPI, UART, BLE</span></div>
         </div>
       </div>
+    </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <span class="tl-role">Wi-Fi Intern</span>
-            <span class="tl-date">May 2024 – Aug 2024</span>
-          </div>
-          <span class="tl-company">CableLabs Inc. · Louisville, CO</span>
-          <p class="tl-desc">Tuned 802.11ac/ax EDCA parameters on a multi-AP testbed. Built a Python PCAP analysis pipeline using RTS frames to measure per-STA inter-transmission time, achieving 35% reduction in p95/p99 ITT.</p>
-          <div class="tl-tags">
-            <span>802.11ax</span><span>EDCA</span><span>Python</span><span>PCAP</span>
-          </div>
+    <div class="card expand-card" id="stack-card" onclick="toggleCard('stack-card')">
+      <div class="expand-head">
+        <div>
+          <p class="card-label">Core stack</p>
+          <h2>Tools of the trade</h2>
+          <p class="sub">Hardware, debug tooling, and build systems.</p>
         </div>
+        <div class="expand-chevron"><i class="ti ti-chevron-down" aria-hidden="true">&darr;</i></div>
       </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <span class="tl-role">Associate Firmware Engineer</span>
-            <span class="tl-date">Jul 2022 – Jul 2023</span>
+      <div class="expand-body">
+        <div class="expand-body-inner stack-list">
+          <div class="stack-group">
+            <h4>Hardware</h4>
+            <div class="pill-row">
+              <span class="pill">NXP i.MX (Cortex-A53)</span>
+              <span class="pill">STM32F4</span>
+              <span class="pill">EFR32 Blue Gecko</span>
+              <span class="pill">nRF52840</span>
+              <span class="pill">AT89C51</span>
+              <span class="pill">Raspberry Pi 4B</span>
+              <span class="pill">SD8987 / SD8997</span>
+            </div>
           </div>
-          <span class="tl-company">Volansys Technologies (ACL Digital) · Ahmedabad, India</span>
-          <p class="tl-desc">NXP i.MX platform bring-up, mwifiex driver debugging, Yocto BSP development. Diagnosed and fixed an endianness bug using <code>le16_to_cpu()</code>; reduced boot time by 6.5s through init sequence optimisation.</p>
-          <div class="tl-tags">
-            <span>NXP i.MX</span><span>mwifiex</span><span>Yocto</span><span>Linux Kernel</span>
+          <div class="stack-group">
+            <h4>Debug &amp; validation</h4>
+            <div class="pill-row">
+              <span class="pill">GDB / kGDB</span>
+              <span class="pill">Wireshark</span>
+              <span class="pill">Trace32</span>
+              <span class="pill">QEMU</span>
+              <span class="pill">LANforge</span>
+              <span class="pill">Logic analyzer</span>
+              <span class="pill">Oscilloscope</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <h4>Build &amp; languages</h4>
+            <div class="pill-row">
+              <span class="pill">C</span>
+              <span class="pill">ARM Assembly</span>
+              <span class="pill">Yocto / Buildroot</span>
+              <span class="pill">FreeRTOS</span>
+              <span class="pill">Embedded Linux</span>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
-  </section>
 
-  <!-- RESEARCH -->
-  <section class="section" id="research">
-    <div class="section-label">// research</div>
-    <div class="research-grid">
+  </div>
 
-      <div class="research-card">
-        <div class="research-icon"><i class="ti ti-cpu-2"></i></div>
-        <div class="research-body">
-          <div class="research-affil">Prof. Eric Keller · CU Boulder ECEE</div>
-          <div class="research-title">Open-Source Containerised Autograding Framework for Bare-Metal Embedded Systems Courses</div>
-          <div class="research-status active">Active · 2026</div>
-        </div>
-      </div>
-
-      <div class="research-card">
-        <div class="research-icon"><i class="ti ti-ear"></i></div>
-        <div class="research-body">
-          <div class="research-affil">Prof. Sam Siewert · CU Boulder ECEE</div>
-          <div class="research-title">Acoustic Sensor Networks for Wildlife Poaching Prevention</div>
-          <div class="research-status active">Active · 2026</div>
-        </div>
-      </div>
-
+  <div class="section-head wifi-section" data-ssid="parth-varsani_projects">
+    <div>
+      <p class="ssid-tag mono"><span class="ssid-dot"></span><span class="ssid-text">parth-varsani_projects</span><span class="ssid-status"></span></p>
+      <h2 class="display">Projects</h2>
     </div>
-  </section>
+    <p class="section-note">measured, not just built</p>
+  </div>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <div class="section-label">// projects</div>
-    <div class="projects-grid">
+  <div class="project-grid">
 
-      <a class="project-card" href="https://github.com/Parthvarsani13/ECEN5623_RTES_FINAL_PROJECT_TRACKING_TURRET" target="_blank">
-        <div class="proj-icon"><i class="ti ti-camera"></i></div>
-        <div class="proj-body">
-          <div class="proj-title">Pan-Tilt Tracking Turret</div>
-          <div class="proj-sub">POSIX SCHED_FIFO · V4L2 · HSV PID · RPi 4B</div>
-          <div class="proj-tag">RTES</div>
-        </div>
-        <i class="ti ti-arrow-up-right proj-arrow"></i>
-      </a>
-
-      <a class="project-card" href="https://github.com/Parthvarsani13/final-project-Parthvarsani13" target="_blank">
-        <div class="proj-icon"><i class="ti ti-car"></i></div>
-        <div class="proj-body">
-          <div class="proj-title">CAN-Based Reverse Parking Assist</div>
-          <div class="proj-sub">SocketCAN · MCP2515 · Yocto · POSIX IPC</div>
-          <div class="proj-tag">AESD</div>
-        </div>
-        <i class="ti ti-arrow-up-right proj-arrow"></i>
-      </a>
-
-      <a class="project-card" href="https://github.com/Parthvarsani13/spring_25_iot_emb_fw" target="_blank">
-        <div class="proj-icon"><i class="ti ti-bluetooth"></i></div>
-        <div class="proj-body">
-          <div class="proj-title">BLE Proximity Alert System</div>
-          <div class="proj-sub">EFR32 · Gecko SDK · GATT · RSSI thresholding</div>
-          <div class="proj-tag">IoT</div>
-        </div>
-        <i class="ti ti-arrow-up-right proj-arrow"></i>
-      </a>
-
-      <a class="project-card" href="https://github.com/Parthvarsani13/fall_24_pes" target="_blank">
-        <div class="proj-icon"><i class="ti ti-activity"></i></div>
-        <div class="proj-body">
-          <div class="proj-title">Smart Sensor Monitoring System</div>
-          <div class="proj-sub">STM32F411 · I2C · UART · DMA · FreeRTOS</div>
-          <div class="proj-tag">PES</div>
-        </div>
-        <i class="ti ti-arrow-up-right proj-arrow"></i>
-      </a>
-
-      <a class="project-card" href="https://github.com/Parthvarsani13/ESD_Repo" target="_blank">
-        <div class="proj-icon"><i class="ti ti-microchip"></i></div>
-        <div class="proj-body">
-          <div class="proj-title">8051 Platform Development</div>
-          <div class="proj-sub">AT89c51RC2 · Bare-metal · Timer · UART · ISR</div>
-          <div class="proj-tag">ESD</div>
-        </div>
-        <i class="ti ti-arrow-up-right proj-arrow"></i>
-      </a>
-
-      <a class="project-card" href="https://github.com/Parthvarsani13/embedded-autograder" target="_blank">
-        <div class="proj-icon"><i class="ti ti-test-pipe"></i></div>
-        <div class="proj-body">
-          <div class="proj-title">Embedded Autograder</div>
-          <div class="proj-sub">Renode · Robot Framework · Docker · STM32</div>
-          <div class="proj-tag">Open Source</div>
-        </div>
-        <i class="ti ti-arrow-up-right proj-arrow"></i>
-      </a>
-
+    <div class="proj-card">
+      <div class="proj-top">
+        <h3 class="display"><i class="ti ti-cpu proj-icon" aria-hidden="true"></i>Real-time pan-tilt vision tracking</h3>
+        <a class="proj-link" href="https://github.com/Parthvarsani13/spring_26_rtes" target="_blank" rel="noopener">repo &rarr;</a>
+      </div>
+      <p class="proj-period">Raspberry Pi 4B &middot; Apr&ndash;May 2026</p>
+      <p class="desc">Four POSIX SCHED_FIFO pthreads (V4L2 capture, HSV segmentation, PID servo control at 30 Hz, 1 Hz health monitor) drive a dual-axis servo platform to track a moving target with closed-loop PID.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">RTOS</span>
+        <span class="proj-tag">POSIX threads</span>
+        <span class="proj-tag">V4L2</span>
+        <span class="proj-tag">PID control</span>
+      </div>
+      <div class="signal">U = 0.19, well under RM bound of 0.757 &middot; zero deadline misses</div>
     </div>
-  </section>
 
-  <!-- NOW BUILDING -->
-  <section class="section" id="now">
-    <div class="section-label">// now building</div>
-    <div class="now-grid">
-      <div class="now-card">
-        <i class="ti ti-car"></i>
-        <span>IVI Wi-Fi bring-up · Ford Greenfield Labs</span>
+    <div class="proj-card">
+      <div class="proj-top">
+        <h3 class="display"><i class="ti ti-route proj-icon" aria-hidden="true"></i>CAN-based proximity alert system</h3>
+        <a class="proj-link" href="https://github.com/Parthvarsani13/spring_25_aesd" target="_blank" rel="noopener">repo &rarr;</a>
       </div>
-      <div class="now-card">
-        <i class="ti ti-box"></i>
-        <span>Containerised autograder for embedded systems education</span>
+      <p class="proj-period">Raspberry Pi 4B &middot; Apr&ndash;May 2025</p>
+      <p class="desc">Character-device I2C driver for the APDS9960 proximity sensor exposing data via FIFO IPC, plus a Yocto meta-layer integrating an MCP2515 CAN overlay and systemd services for multi-node deployment over SocketCAN.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">I2C driver</span>
+        <span class="proj-tag">SocketCAN</span>
+        <span class="proj-tag">Yocto</span>
+        <span class="proj-tag">embedded Linux</span>
       </div>
-      <div class="now-card">
-        <i class="ti ti-ear"></i>
-        <span>Acoustic poaching-detection pipeline · Jetson Orin Nano</span>
-      </div>
-      <div class="now-card">
-        <i class="ti ti-git-branch"></i>
-        <span>wifi_lat.ko — kprobes-based mac80211 TX latency tracer</span>
-      </div>
+      <div class="signal">two-node distributed app, fault-resistant LED response</div>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="section-label">// contact</div>
-    <div class="contact-block">
-      <p>Open to embedded firmware roles, Wi-Fi/connectivity engineering, and research collaboration.</p>
-      <a href="mailto:parthvarsani45@gmail.com" class="btn btn-primary btn-lg">
-        <i class="ti ti-send"></i> parthvarsani45@gmail.com
-      </a>
+    <div class="proj-card">
+      <div class="proj-top">
+        <h3 class="display"><i class="ti ti-bluetooth proj-icon" aria-hidden="true"></i>BLE-based reverse parking assist</h3>
+        <a class="proj-link" href="https://github.com/Parthvarsani13/spring_25_iot_emb_fw" target="_blank" rel="noopener">repo &rarr;</a>
+      </div>
+      <p class="proj-period">EFR32 Blue Gecko &middot; Apr&ndash;May 2025</p>
+      <p class="desc">Low-power sensing system with interrupt-driven firmware coordinating ultrasonic and ambient-light sensors via GPIO and I2C, using BLE GATT alerts and sleep-mode power management.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">BLE GATT</span>
+        <span class="proj-tag">bare-metal</span>
+        <span class="proj-tag">low-power</span>
+        <span class="proj-tag">interrupt-driven</span>
+      </div>
+      <div class="signal">3.6 mA server / 250 &mu;A client measured current draw</div>
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <span>Parth Varsani · Santa Clara, CA</span>
-    <span>Built with HTML/CSS · Hosted on GitHub Pages</span>
+    <div class="proj-card">
+      <div class="proj-top">
+        <h3 class="display"><i class="ti ti-thermometer proj-icon" aria-hidden="true"></i>Smart sensor monitoring</h3>
+        <a class="proj-link" href="https://github.com/Parthvarsani13/fall_24_pes" target="_blank" rel="noopener">repo &rarr;</a>
+      </div>
+      <p class="proj-period">STM32F411 &middot; Fall 2024</p>
+      <p class="desc">Bare-metal firmware using memory-mapped I/O to interface IR and temperature sensors via bit-banged I2C and ADC, with NVIC- and DMA-driven interrupt acquisition feeding an OLED display.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">memory-mapped I/O</span>
+        <span class="proj-tag">DMA</span>
+        <span class="proj-tag">NVIC</span>
+        <span class="proj-tag">Cortex-M4</span>
+      </div>
+      <div class="signal">sub-1% CPU utilization during continuous monitoring</div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-top">
+        <h3 class="display"><i class="ti ti-circuit-resistor proj-icon" aria-hidden="true"></i>8051 development board &amp; drivers</h3>
+        <a class="proj-link" href="https://github.com/Parthvarsani13/fall_24_esd" target="_blank" rel="noopener">repo &rarr;</a>
+      </div>
+      <p class="proj-period">AT89C51RC2 &middot; Fall 2024</p>
+      <p class="desc">Custom hardware platform built from first principles &mdash; clocking, reset sequencing, memory decoding, peripheral address mapping &mdash; with hand-written assembly and C drivers for UART, I2C EEPROM, SPI, ADC, and LCD.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">8051 assembly</span>
+        <span class="proj-tag">bring-up</span>
+        <span class="proj-tag">UART/SPI/I2C</span>
+        <span class="proj-tag">logic analyzer</span>
+      </div>
+      <div class="signal">verified bus timing &amp; ACK/NACK behavior at the signal level</div>
+    </div>
+
+  </div>
+
+  <div class="section-head wifi-section" data-ssid="parth-varsani_experience">
+    <div>
+      <p class="ssid-tag mono"><span class="ssid-dot"></span><span class="ssid-text">parth-varsani_experience</span><span class="ssid-status"></span></p>
+      <h2 class="display">Experience</h2>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <p class="exp-period">May 2025 &ndash; Aug 2025</p>
+    <div>
+      <h3 class="exp-role display">Wi-Fi Intern</h3>
+      <p class="exp-org">CableLabs Inc. &middot; Louisville, CO</p>
+      <ul>
+        <li>Tuned EDCA (AIFSN, CWmin/CWmax, TXOP) parameters in the mwifiex driver stack to optimize MAC-layer contention behavior for voice/video ACs, reducing inter-transmission time by 35% across multi-station 802.11ac testbeds.</li>
+        <li>Built a Python PCAP analysis pipeline parsing radiotap and 802.11 MAC headers to extract per-AC ITT, TXOP duration, and retry distributions, replacing manual Wireshark inspection with closed-loop tuning.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <p class="exp-period">Jan 2022 &ndash; Jul 2024</p>
+    <div>
+      <h3 class="exp-role display">Associate Firmware Engineer</h3>
+      <p class="exp-org">Volansys &mdash; An ACL Digital Company &middot; Ahmedabad, India</p>
+      <ul>
+        <li>Root-caused and fixed an endianness bug in the custom mwifiex driver channel-scan path on NXP i.MX 8MQ (SD8987), tracing corrupted channel descriptors through cfg80211 scan results with GDB and kernel ftrace.</li>
+        <li>Debugged Wi-Fi connectivity, roaming, and throughput regressions on SD8997 across driver/firmware boundaries, isolating issues to mac80211, vendor driver, or firmware layers.</li>
+        <li>Customized Yocto-based Linux BSPs for NXP i.MX platforms, trimming kernel configuration and optimizing U-Boot fast-boot paths to cut system startup time by 6.5 seconds.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-head wifi-section" data-ssid="parth-varsani_research">
+    <div>
+      <p class="ssid-tag mono"><span class="ssid-dot"></span><span class="ssid-text">parth-varsani_research</span><span class="ssid-status"></span></p>
+      <h2 class="display">Research</h2>
+    </div>
+  </div>
+
+  <div class="card research-card" style="margin-bottom: 16px;">
+    <div class="proj-top" style="margin-bottom: 10px;">
+      <h3 class="display"><i class="ti ti-flask proj-icon" aria-hidden="true"></i>Containerized autograding infrastructure for embedded systems coursework</h3>
+      <span class="proj-link" style="cursor: default;">ongoing</span>
+    </div>
+    <p class="proj-period">University of Colorado Boulder, ECEE &middot; with Prof. Eric Keller</p>
+    <p class="desc">Building containerized autograding infrastructure for ECEN 5813 (Embedded Software Methods), using Renode for hardware emulation and Robot Framework for test orchestration &mdash; enabling reproducible, hardware-free grading of embedded coursework at scale.</p>
+    <div class="proj-tags">
+      <span class="proj-tag">Renode</span>
+      <span class="proj-tag">Robot Framework</span>
+      <span class="proj-tag">containerization</span>
+      <span class="proj-tag">CI/CD for coursework</span>
+    </div>
+  </div>
+
+  <div class="section-head wifi-section" data-ssid="parth-varsani_now-building">
+    <div>
+      <p class="ssid-tag mono"><span class="ssid-dot"></span><span class="ssid-text">parth-varsani_now-building</span><span class="ssid-status"></span></p>
+      <h2 class="display">Now building</h2>
+    </div>
+    <p class="section-note"><a href="https://github.com/Parthvarsani13?tab=repositories" target="_blank" rel="noopener">all repos &rarr;</a></p>
+  </div>
+
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="building-list">
+      <div class="building-row"><span class="ico"></span>Driver-level Wi-Fi instrumentation &mdash; kprobes-based tracing on the mac80211 TX path</div>
+      <div class="building-row"><span class="ico"></span>Reusable embedded Linux driver patterns for sensor bring-up</div>
+      <div class="building-row"><span class="ico"></span>Real-time scheduling experiments beyond rate-monotonic baselines</div>
+    </div>
+  </div>
+
+  <div class="section-head wifi-section" data-ssid="parth-varsani_stats">
+    <div>
+      <p class="ssid-tag mono"><span class="ssid-dot"></span><span class="ssid-text">parth-varsani_stats</span><span class="ssid-status"></span></p>
+      <h2 class="display">Stats</h2>
+    </div>
+    <p class="section-note"><a href="https://leetcode.com/Parth_Varsani_13/" target="_blank" rel="noopener">leetcode &rarr;</a></p>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stats-card">
+      <img src="https://github-readme-stats.vercel.app/api?username=Parthvarsani13&show_icons=true&theme=dark&hide_border=true&bg_color=13161B&title_color=3DD9D6&icon_color=3DD9D6&text_color=8B919A" alt="GitHub stats for Parthvarsani13" loading="lazy">
+    </div>
+    <div class="stats-card">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Parthvarsani13&layout=compact&theme=dark&hide_border=true&bg_color=13161B&title_color=3DD9D6&text_color=8B919A" alt="Top languages for Parthvarsani13" loading="lazy">
+    </div>
+    <div class="stats-card">
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Parthvarsani13&theme=dark&hide_border=true&background=13161B&ring=3DD9D6&fire=3DD9D6&currStreakLabel=3DD9D6" alt="GitHub streak for Parthvarsani13" loading="lazy">
+    </div>
+    <div class="stats-card">
+      <img src="https://leetcard.jacoblin.cool/Parth_Varsani_13?theme=dark&font=Inter&ext=heatmap" alt="LeetCode stats for Parth_Varsani_13" loading="lazy">
+    </div>
+  </div>
+
+  <footer>
+    <p class="mono">designed &amp; built by Parth Varsani</p>
+    <div class="hero-links">
+      <a class="btn" href="https://github.com/Parthvarsani13" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i>GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/parthvarsani" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>LinkedIn</a>
+      <a class="btn" href="mailto:parthvarsani45@gmail.com"><i class="ti ti-mail" aria-hidden="true"></i>Email</a>
+    </div>
   </footer>
+
+</div>
+
+<script>
+function toggleCard(id) {
+  document.getElementById(id).classList.toggle('open');
+}
+
+// Signal bars fill based on scroll progress
+(function() {
+  var bars = document.querySelectorAll('#signalBars .bar');
+  function updateSignal() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = docHeight > 0 ? scrollTop / docHeight : 0;
+    var active = Math.ceil(progress * 4);
+    bars.forEach(function(bar, i) {
+      bar.classList.toggle('active', i < active || (progress > 0.02 && i === 0));
+    });
+  }
+  window.addEventListener('scroll', updateSignal, { passive: true });
+  updateSignal();
+})();
+
+// Connect flicker on section scroll-into-view
+(function() {
+  var sections = document.querySelectorAll('.wifi-section');
+  if (!('IntersectionObserver' in window)) return;
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !entry.target.dataset.connected) {
+        entry.target.dataset.connected = 'true';
+        var statusEl = entry.target.querySelector('.ssid-status');
+        var dotEl = entry.target.querySelector('.ssid-dot');
+        if (!statusEl) return;
+        statusEl.textContent = 'connecting...';
+        dotEl.classList.add('connecting');
+        setTimeout(function() {
+          statusEl.textContent = 'connected';
+          dotEl.classList.remove('connecting');
+          dotEl.classList.add('connected');
+        }, 550);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  sections.forEach(function(s) { observer.observe(s); });
+})();
+</script>
 
 </body>
 </html>
