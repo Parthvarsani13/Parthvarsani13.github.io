@@ -13,9 +13,28 @@
 </head>
 <body>
 
+<nav class="signal-nav">
+  <div class="wrap nav-inner">
+    <span class="nav-name mono">parth_varsani</span>
+    <div class="signal-bars" id="signalBars" aria-label="scroll signal strength">
+      <span class="bar b1"></span>
+      <span class="bar b2"></span>
+      <span class="bar b3"></span>
+      <span class="bar b4"></span>
+    </div>
+  </div>
+</nav>
+
 <div class="wrap">
 
   <header class="hero">
+    <div class="ripple-bg" aria-hidden="true">
+      <svg viewBox="0 0 600 300" preserveAspectRatio="none">
+        <circle class="ripple r1" cx="520" cy="60" r="20"></circle>
+        <circle class="ripple r2" cx="520" cy="60" r="20"></circle>
+        <circle class="ripple r3" cx="520" cy="60" r="20"></circle>
+      </svg>
+    </div>
     <p class="role-tag">Embedded Firmware Engineer</p>
     <h1 class="name display">Parth Varsani</h1>
     <p class="tagline">Embedded software and firmware engineer focused on Wi-Fi driver internals, real-time systems, and board-level bring-up across Linux and bare-metal targets.</p>
@@ -131,8 +150,11 @@
 
   </div>
 
-  <div class="section-head">
-    <h2 class="display">Projects</h2>
+  <div class="section-head wifi-section" data-ssid="parth-varsani_projects">
+    <div>
+      <p class="ssid-tag mono"><span class="ssid-dot"></span><span class="ssid-text">parth-varsani_projects</span><span class="ssid-status"></span></p>
+      <h2 class="display">Projects</h2>
+    </div>
     <p class="section-note">measured, not just built</p>
   </div>
 
@@ -220,8 +242,11 @@
 
   </div>
 
-  <div class="section-head">
-    <h2 class="display">Experience</h2>
+  <div class="section-head wifi-section" data-ssid="parth-varsani_experience">
+    <div>
+      <p class="ssid-tag mono"><span class="ssid-dot"></span><span class="ssid-text">parth-varsani_experience</span><span class="ssid-status"></span></p>
+      <h2 class="display">Experience</h2>
+    </div>
   </div>
 
   <div class="exp-item">
@@ -249,8 +274,11 @@
     </div>
   </div>
 
-  <div class="section-head">
-    <h2 class="display">Research</h2>
+  <div class="section-head wifi-section" data-ssid="parth-varsani_research">
+    <div>
+      <p class="ssid-tag mono"><span class="ssid-dot"></span><span class="ssid-text">parth-varsani_research</span><span class="ssid-status"></span></p>
+      <h2 class="display">Research</h2>
+    </div>
   </div>
 
   <div class="card research-card" style="margin-bottom: 16px;">
@@ -268,8 +296,11 @@
     </div>
   </div>
 
-  <div class="section-head">
-    <h2 class="display">Now building</h2>
+  <div class="section-head wifi-section" data-ssid="parth-varsani_now-building">
+    <div>
+      <p class="ssid-tag mono"><span class="ssid-dot"></span><span class="ssid-text">parth-varsani_now-building</span><span class="ssid-status"></span></p>
+      <h2 class="display">Now building</h2>
+    </div>
     <p class="section-note"><a href="https://github.com/Parthvarsani13?tab=repositories" target="_blank" rel="noopener">all repos &rarr;</a></p>
   </div>
 
@@ -281,8 +312,11 @@
     </div>
   </div>
 
-  <div class="section-head">
-    <h2 class="display">Stats</h2>
+  <div class="section-head wifi-section" data-ssid="parth-varsani_stats">
+    <div>
+      <p class="ssid-tag mono"><span class="ssid-dot"></span><span class="ssid-text">parth-varsani_stats</span><span class="ssid-status"></span></p>
+      <h2 class="display">Stats</h2>
+    </div>
     <p class="section-note"><a href="https://leetcode.com/Parth_Varsani_13/" target="_blank" rel="noopener">leetcode &rarr;</a></p>
   </div>
 
@@ -316,6 +350,48 @@
 function toggleCard(id) {
   document.getElementById(id).classList.toggle('open');
 }
+
+// Signal bars fill based on scroll progress
+(function() {
+  var bars = document.querySelectorAll('#signalBars .bar');
+  function updateSignal() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = docHeight > 0 ? scrollTop / docHeight : 0;
+    var active = Math.ceil(progress * 4);
+    bars.forEach(function(bar, i) {
+      bar.classList.toggle('active', i < active || (progress > 0.02 && i === 0));
+    });
+  }
+  window.addEventListener('scroll', updateSignal, { passive: true });
+  updateSignal();
+})();
+
+// Connect flicker on section scroll-into-view
+(function() {
+  var sections = document.querySelectorAll('.wifi-section');
+  if (!('IntersectionObserver' in window)) return;
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !entry.target.dataset.connected) {
+        entry.target.dataset.connected = 'true';
+        var statusEl = entry.target.querySelector('.ssid-status');
+        var dotEl = entry.target.querySelector('.ssid-dot');
+        if (!statusEl) return;
+        statusEl.textContent = 'connecting...';
+        dotEl.classList.add('connecting');
+        setTimeout(function() {
+          statusEl.textContent = 'connected';
+          dotEl.classList.remove('connecting');
+          dotEl.classList.add('connected');
+        }, 550);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  sections.forEach(function(s) { observer.observe(s); });
+})();
 </script>
 
 </body>
