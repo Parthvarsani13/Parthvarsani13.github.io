@@ -119,6 +119,123 @@ h1.name {
 
 .btn.primary:hover { background: #4FE5E2; color: #06201F; }
 
+/* ---------- signal nav ---------- */
+.signal-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(10, 12, 15, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+}
+
+.nav-name {
+  font-size: 13px;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+.signal-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 16px;
+}
+
+.signal-bars .bar {
+  width: 4px;
+  background: var(--line-bright);
+  border-radius: 1px;
+  transition: background 0.3s ease;
+}
+
+.signal-bars .b1 { height: 4px; }
+.signal-bars .b2 { height: 8px; }
+.signal-bars .b3 { height: 12px; }
+.signal-bars .b4 { height: 16px; }
+
+.signal-bars .bar.active { background: var(--accent); box-shadow: 0 0 6px var(--accent); }
+
+/* ---------- hero ripple ---------- */
+header.hero { position: relative; overflow: hidden; }
+
+.ripple-bg {
+  position: absolute;
+  top: 0; right: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ripple-bg svg { width: 100%; height: 100%; }
+
+.ripple {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  opacity: 0;
+  transform-origin: 520px 60px;
+  animation: ripple-out 3.6s ease-out infinite;
+}
+
+.ripple.r2 { animation-delay: 1.2s; }
+.ripple.r3 { animation-delay: 2.4s; }
+
+@keyframes ripple-out {
+  0%   { r: 14; opacity: 0.55; }
+  100% { r: 130; opacity: 0; }
+}
+
+header.hero > *:not(.ripple-bg) { position: relative; z-index: 1; }
+
+/* ---------- SSID section labels ---------- */
+.ssid-tag {
+  font-size: 11px;
+  color: var(--ink-faint);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 6px;
+  letter-spacing: 0.02em;
+}
+
+.ssid-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ink-faint);
+  flex-shrink: 0;
+  transition: background 0.3s ease;
+}
+
+.ssid-dot.connecting {
+  background: var(--accent);
+  animation: ssid-pulse 0.55s ease-in-out infinite;
+}
+
+.ssid-dot.connected {
+  background: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
+}
+
+@keyframes ssid-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.ssid-status {
+  color: var(--accent);
+  font-size: 10.5px;
+  min-width: 70px;
+}
+
 /* ---------- stats strip ---------- */
 .stats-row {
   display: grid;
@@ -299,7 +416,7 @@ h1.name {
 /* ---------- section heads ---------- */
 .section-head {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   justify-content: space-between;
   margin: 48px 0 18px;
   gap: 16px;
@@ -318,6 +435,7 @@ h1.name {
   font-size: 12px;
   color: var(--ink-faint);
   white-space: nowrap;
+  margin-top: 22px;
 }
 
 .section-note a:hover { color: var(--accent); }
@@ -546,11 +664,13 @@ footer .btn { padding: 8px 14px; font-size: 13px; }
   .exp-item { grid-template-columns: 1fr; gap: 6px; }
   .stats-grid { grid-template-columns: 1fr; }
   .section-head { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .nav-inner { padding: 12px 20px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  * { transition: none !important; }
+  * { transition: none !important; animation: none !important; }
+  .ripple { opacity: 0 !important; }
 }
 
 a:focus-visible, .btn:focus-visible, .expand-card:focus-visible {
