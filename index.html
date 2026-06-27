@@ -40,7 +40,7 @@
     <p class="tagline">Embedded software and firmware engineer focused on Wi-Fi driver internals, real-time systems, and board-level bring-up across Linux and bare-metal targets.</p>
 
     <div class="hero-meta">
-      <span>Boulder, CO &rarr; Bay Area, CA</span>
+      <span>Santa Clara, CA</span>
       <span class="dot">&middot;</span>
       <span>M.S. ECE, CU Boulder &apos;26</span>
     </div>
@@ -267,26 +267,62 @@
   </div>
 
   <div class="exp-item">
-    <p class="exp-period">May 2025 &ndash; Aug 2025</p>
+    <p class="exp-period">May 2025 &ndash; Aug 2025 &middot; 4 mos</p>
     <div>
       <h3 class="exp-role display">Wi-Fi Intern</h3>
-      <p class="exp-org">CableLabs Inc. &middot; Louisville, CO</p>
+      <p class="exp-org">CableLabs &middot; Internship &middot; Louisville, CO &middot; On-site</p>
       <ul>
-        <li>Tuned EDCA (AIFSN, CWmin/CWmax, TXOP) parameters in the mwifiex driver stack to optimize MAC-layer contention behavior for voice/video ACs, reducing inter-transmission time by 35% across multi-station 802.11ac testbeds.</li>
-        <li>Built a Python PCAP analysis pipeline parsing radiotap and 802.11 MAC headers to extract per-AC ITT, TXOP duration, and retry distributions, replacing manual Wireshark inspection with closed-loop tuning.</li>
+        <li>Reduced per-STA p95/p99 inter-transmission time (ITT) by 35% by systematically tuning EDCA parameters (AIFS, CWmin, CWmax, TXOP) across Best-Effort and Video traffic classes on a live 802.11ac testbed &mdash; correlated beacon-advertised EDCA values with live air-capture outcomes to isolate the highest-leverage tuning variables.</li>
+        <li>Designed and built a multi-core Python PCAP analytics framework to automate per-STA reporting of TXOP utilization, ITT, retry rates, MCS distribution, and RSSI &mdash; eliminated manual frame-by-frame analysis and reduced turnaround from hours to minutes.</li>
+        <li>Mapped EDCA contention dynamics to the 802.11 MAC specification (IEEE 802.11-2020 &sect;26) to produce actionable tuning guidance grounded in protocol behavior, not trial-and-error.</li>
       </ul>
     </div>
   </div>
 
   <div class="exp-item">
-    <p class="exp-period">Jan 2022 &ndash; Jul 2024</p>
+    <p class="exp-period">Jan 2023 &ndash; Jul 2024 &middot; 1 yr 7 mos</p>
     <div>
       <h3 class="exp-role display">Associate Firmware Engineer</h3>
-      <p class="exp-org">Volansys &mdash; An ACL Digital Company &middot; Ahmedabad, India</p>
+      <p class="exp-org">Volansys (An ACL Digital Company) &middot; Full-time &middot; Ahmedabad, India &middot; On-site</p>
       <ul>
-        <li>Root-caused and fixed an endianness bug in the custom mwifiex driver channel-scan path on NXP i.MX 8MQ (SD8987), tracing corrupted channel descriptors through cfg80211 scan results with GDB and kernel ftrace.</li>
-        <li>Debugged Wi-Fi connectivity, roaming, and throughput regressions on SD8997 across driver/firmware boundaries, isolating issues to mac80211, vendor driver, or firmware layers.</li>
-        <li>Customized Yocto-based Linux BSPs for NXP i.MX platforms, trimming kernel configuration and optimizing U-Boot fast-boot paths to cut system startup time by 6.5 seconds.</li>
+        <li>Diagnosed and resolved an endianness bug in the mwifiex Linux kernel driver on NXP i.MX 8MQ + Marvell SD8987: traced corrupted TX descriptor fields via SDIO bus captures to a missing <code>le16_to_cpu()</code> conversion &mdash; fix eliminated a class of silent data corruption on BE host platforms.</li>
+        <li>Reduced embedded Linux boot time by 6.5 seconds on NXP i.MX platform through targeted Yocto recipe optimization and kernel configuration pruning (removed unused subsystems, tuned init ordering).</li>
+        <li>Performed driver validation and debug on Marvell SD8987 and SD8997 across SDIO and PCIe interfaces &mdash; instrumented buffer management paths, analyzed DMA descriptor state, and reproduced/root-caused intermittent TX hang conditions.</li>
+        <li>Developed and maintained Yocto BSP layers for NXP i.MX customer platforms: kernel defconfig management, device tree authoring, board bring-up support, and meta-layer packaging.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <p class="exp-period">Jul 2022 &ndash; Dec 2022 &middot; 6 mos</p>
+    <div>
+      <h3 class="exp-role display">Trainee Firmware Engineer</h3>
+      <p class="exp-org">Volansys (An ACL Digital Company) &middot; Apprenticeship &middot; Ahmedabad, India &middot; On-site</p>
+      <ul>
+        <li>Validated 802.11n/ac driver behavior (Marvell 8987, 8997) across unit, integration, and functional test scenarios; documented failure modes and regression results to accelerate driver stabilization.</li>
+        <li>Gained working knowledge of embedded Linux bring-up: U-Boot, device tree, platform driver loading, and kernel debug via serial console and JTAG.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <p class="exp-period">Jan 2022 &ndash; Jun 2022 &middot; 6 mos</p>
+    <div>
+      <h3 class="exp-role display">Firmware Engineer Intern</h3>
+      <p class="exp-org">Volansys (An ACL Digital Company) &middot; Internship &middot; Hybrid</p>
+      <ul>
+        <li>Entry-level rotation covering driver fundamentals, toolchain setup, and internal tooling.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <p class="exp-period">Jun 2021 &ndash; Aug 2021 &middot; 3 mos</p>
+    <div>
+      <h3 class="exp-role display">Project Intern</h3>
+      <p class="exp-org">acdctech &middot; Internship &middot; Surat, Gujarat, India &middot; On-site</p>
+      <ul>
+        <li>Electronics engineering project internship &mdash; signal acquisition and embedded prototyping.</li>
       </ul>
     </div>
   </div>
