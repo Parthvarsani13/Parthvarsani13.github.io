@@ -43,37 +43,6 @@ Building containerized autograding infrastructure for embedded systems coursewor
 - **Wi-Fi Intern** — [CableLabs Inc.](https://www.cablelabs.com/), Louisville, CO
 - **Associate Firmware Engineer** — [Volansys, an ACL Digital Company](https://www.acldigital.com/), Ahmedabad, India
 
-### 🚀 Featured projects
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/Parthvarsani13/spring_26_rtes">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Parthvarsani13&repo=spring_26_rtes&theme=default&show_owner=true&hide_border=true&border_radius=10&title_color=3D6B5C" alt="Real-time pan-tilt vision tracking">
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Parthvarsani13/spring_25_iot_emb_fw">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Parthvarsani13&repo=spring_25_iot_emb_fw&theme=default&show_owner=true&hide_border=true&border_radius=10&title_color=3D6B5C" alt="BLE-based reverse parking assist">
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/Parthvarsani13/fall_24_esd">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Parthvarsani13&repo=fall_24_esd&theme=default&show_owner=true&hide_border=true&border_radius=10&title_color=3D6B5C" alt="8051 development board & drivers">
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Parthvarsani13/wifi_ie_monitoring_personal_project">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Parthvarsani13&repo=wifi_ie_monitoring_personal_project&theme=default&show_owner=true&hide_border=true&border_radius=10&title_color=3D6B5C" alt="Wi-Fi frame parser + fuzz hardening">
-      </a>
-    </td>
-  </tr>
-</table>
-
-More projects, with details and measured results:
-
 | Project | Description |
 |---|---|
 | [Real-time pan-tilt vision tracking](https://github.com/Parthvarsani13/spring_26_rtes) | RPi 4B · 4 POSIX SCHED_FIFO threads, U=0.19, zero deadline misses |
