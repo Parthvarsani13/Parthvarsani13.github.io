@@ -2,6 +2,8 @@
 
 Embedded Firmware Engineer | Wi-Fi Drivers & Embedded Linux | Real-Time Systems
 
+![Profile Views](https://komarev.com/ghpvc/?username=Parthvarsani13&color=3D6B5C&style=flat-square)
+
 [![Portfolio](https://img.shields.io/badge/Portfolio-3DD9D6?style=flat-square&logo=googlechrome&logoColor=0A0C0F)](https://parthvarsani13.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/parthvarsani)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:parthvarsani45@gmail.com)
@@ -12,6 +14,11 @@ Embedded Firmware Engineer | Wi-Fi Drivers & Embedded Linux | Real-Time Systems
 ### 🔧 Currently
 
 Building containerized autograding infrastructure for embedded systems coursework at CU Boulder (ECEN 5813) with Prof. Eric Keller — using Renode for hardware emulation and Robot Framework for test orchestration.
+
+### 🎓 Education
+
+- M.S. Electrical & Computer Engineering (Embedded Systems), University of Colorado Boulder &mdash; 2026
+- B.Tech. Electronics Engineering, BVM Engineering College, India &mdash; 2022
 
 ### 🎯 Focus areas
 
@@ -38,6 +45,35 @@ Building containerized autograding infrastructure for embedded systems coursewor
 
 ### 🚀 Featured projects
 
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Parthvarsani13/spring_26_rtes">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Parthvarsani13&repo=spring_26_rtes&theme=default&show_owner=true&hide_border=true&border_radius=10&title_color=3D6B5C" alt="Real-time pan-tilt vision tracking">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Parthvarsani13/spring_25_iot_emb_fw">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Parthvarsani13&repo=spring_25_iot_emb_fw&theme=default&show_owner=true&hide_border=true&border_radius=10&title_color=3D6B5C" alt="BLE-based reverse parking assist">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Parthvarsani13/fall_24_esd">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Parthvarsani13&repo=fall_24_esd&theme=default&show_owner=true&hide_border=true&border_radius=10&title_color=3D6B5C" alt="8051 development board & drivers">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Parthvarsani13/wifi_ie_monitoring_personal_project">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Parthvarsani13&repo=wifi_ie_monitoring_personal_project&theme=default&show_owner=true&hide_border=true&border_radius=10&title_color=3D6B5C" alt="Wi-Fi frame parser + fuzz hardening">
+      </a>
+    </td>
+  </tr>
+</table>
+
+More projects, with details and measured results:
+
 | Project | Description |
 |---|---|
 | [Real-time pan-tilt vision tracking](https://github.com/Parthvarsani13/spring_26_rtes) | RPi 4B · 4 POSIX SCHED_FIFO threads, U=0.19, zero deadline misses |
@@ -45,6 +81,7 @@ Building containerized autograding infrastructure for embedded systems coursewor
 | [BLE-based reverse parking assist](https://github.com/Parthvarsani13/spring_25_iot_emb_fw) | EFR32 Blue Gecko · BLE GATT, 3.6 mA / 250 µA measured draw |
 | [Smart sensor monitoring](https://github.com/Parthvarsani13/fall_24_pes) | STM32F411 · DMA + NVIC, sub-1% CPU utilization |
 | [8051 development board & drivers](https://github.com/Parthvarsani13/fall_24_esd) | AT89C51RC2 · bare-metal bring-up from first principles |
+| [Wi-Fi frame parser + fuzz hardening](https://github.com/Parthvarsani13/wifi_ie_monitoring_personal_project) | C, libFuzzer, ASAN/UBSAN · zero OOB reads/writes under fuzzing |
 
 ### 📊 GitHub stats
 
@@ -53,10 +90,12 @@ Building containerized autograding infrastructure for embedded systems coursewor
 
 ![GitHub streak](https://github-readme-streak-stats.herokuapp.com/?user=Parthvarsani13&theme=dark&hide_border=true&background=0D1117&ring=3DD9D6&fire=3DD9D6&currStreakLabel=3DD9D6)
 
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=Parthvarsani13&theme=algolia&row=1&column=6&margin-w=8&no-bg=true)
+
 ### 🧮 LeetCode
 
 [![LeetCode stats](https://leetcard.jacoblin.cool/Parth_Varsani_13?theme=dark&font=Inter&ext=heatmap)](https://leetcode.com/Parth_Varsani_13/)
 
 ---
 
-📍 Santa Clara, CA &nbsp;·&nbsp; 🎓 M.S. ECE (Embedded Systems), CU Boulder '26
+📍 Santa Clara, CA
